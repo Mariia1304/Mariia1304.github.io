@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=Cinzel|Quattrocento+Sans&display=swap');
+@font-face{
+    font-family: "courier prime code";
+    src: local('courier prime code'),
+         url(./courier-prime-code.regular.ttf) format('truetype');
+}
+/* Section hello */
+#hello{
+    background: #2d2929;
+    padding: 2.5em;
+}
+#hello h4, #hello p{
+    font-family: 'courier prime code';
+    color: #f3f3f5;
+    
+    
+}
+#hello span{
+    color: #a4c0d4;
+    font-weight:bold;
+}
+
+/* Navbar */
+.nav-link{
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+}
+.nav-item{
+
+    margin-right: 13em;
+
+}
+
+
+/* este  button tan hermoso cuyo css lo robe de codepen */
+.button {
+    font-family: 'Quattrocento Sans', sans-serif;
+    text-transform: uppercase;
+	min-width: 150px;
+	max-width: 250px;
+	display: block;
+	margin: 0;
+	padding: 1em 2em;
+	border: none;
+	background: none;
+	color: white;
+	position: relative;
+	z-index: 1;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+
+.button--size-s {
+	font-size: 14px;
+}
+
+.button--text-thin {
+	font-weight: 300;
+}
+.button--border-thick {
+	border: 3px solid;
+}
+.button--ujarak {
+	-webkit-transition: border-color 0.4s, color 0.4s;
+	transition: border-color 0.4s, color 0.4s;
+}
+.button--ujarak::before {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: white;
+	z-index: -1;
+	opacity: 0;
+	-webkit-transform: scale3d(0.7, 1, 1);
+	transform: scale3d(0.7, 1, 1);
+	-webkit-transition: -webkit-transform 0.4s, opacity 0.4s;
+	transition: transform 0.4s, opacity 0.4s;
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+
+.button--ujarak.button--inverted::before {
+	background: #a4c0d4;
+}
+.button--ujarak,
+.button--ujarak::before {
+	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
+}
+.button--ujarak:hover {
+	color: #fff;
+	border-color: #37474f;
+}
+.button--ujarak.button--inverted:hover {
+	color: #37474F;
+	border-color: #fff;
+}
+.button--ujarak:hover::before {
+	opacity: 1;
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+@media (max-width: 575.98px){
+	.button--size-s {
+		font-size: 10px;
+	}
+	.button{
+		padding: .7em 1.5em;
+	}
+}
+/* Section about */
+#about{
+	background: #a4c0d4;
+	padding-bottom: 2em ;
+}
+
+.title{
+	font-size: 1.5em;
+	font-family: 'Quattrocento Sans', sans-serif;
+	text-transform: uppercase;
+	border-bottom:solid 2px #2d2929;
+	text-align: center;
+	padding-bottom: .2em;
+	margin-top:.4em;
+	
+}
+@media (max-width: 575.98px) { 
+	.title{
+		font-size: 1em;
+	}
+}
+#about img{
+	border-radius: 50%;
+	width: 15em;
+	
+}
+@media (max-width: 575.98px) { 
+	#about img{
+		width: 9em;
+	}
+}
+.img{
+	text-align: center;
+}
+#about .row:last-child p{
+	padding: 2em 2em 0 1em;
+	font-size: 1.2em;
+}
+@media (max-width: 575.98px) { 
+	#about .row:last-child p{
+		padding: 2em 2.5em 0 2.5em;
+		font-size: .8em;
+	}
+}
+/* projects */
+#projects{
+	background: #c0bebd;
+}
+/* footer */
+#footer{
+	background: #2d2929;
+	font-family: 'Courier New', Courier, monospace;
+	color:#f3f3f5;
+	
+}
+#footer a{
+	color:#f3f3f5;
+}
+#footer a:hover{
+	text-decoration: none;
+	
+}
