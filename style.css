@@ -4,23 +4,42 @@
     src: local('courier prime code'),
          url(./courier-prime-code.regular.ttf) format('truetype');
 }
+html {
+	scroll-behavior: smooth;
+}
 /* Section hello */
-#hello{
+#home{
     background: #2d2929;
     padding: 2.5em;
 }
-#hello h4, #hello p{
+#home h4, #home p{
     font-family: 'courier prime code';
     color: #f3f3f5;
-    
-    
 }
-#hello span{
+#home span{
     color: #a4c0d4;
     font-weight:bold;
 }
+#home a:hover{
+	text-decoration: none;
+}
 
 /* Navbar */
+
+#navbar{
+	overflow: hidden;
+	z-index: 9999;
+}
+.sticky {
+	position: fixed;
+	top: 0;
+	width: 100%;
+  }
+  /* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+  .content{
+	  padding-top:60px;
+	  padding-bottom: 60px;
+  }
 .nav-link{
     font-family: 'Quattrocento Sans', sans-serif;
     text-transform: uppercase;
@@ -113,8 +132,11 @@
 		padding: .7em 1.5em;
 	}
 }
+
+
 /* Section about */
 #about{
+	height: 100vh;
 	background: #a4c0d4;
 	padding-bottom: 2em ;
 }
@@ -159,10 +181,34 @@
 }
 /* projects */
 #projects{
-	background: #c0bebd;
+	/* height: 100vh; */
+	background: #f3f3f5;
 }
+#projects img{
+	width: 100%;
+	height: 250px;
+}
+.projects{
+	padding: 0;
+}
+.overlay {
+    font-size: 1.5rem;
+    color: #a4c0d4;
+    position: absolute;
+    text-align: center;
+    height: 100%;
+    background-color: rgba(255,	255,	255, .9);
+    opacity: 1;
+    z-index: 5000;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s;
+}
+
 /* footer */
 #footer{
+	
 	background: #2d2929;
 	font-family: 'Courier New', Courier, monospace;
 	color:#f3f3f5;

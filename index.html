@@ -11,14 +11,14 @@
 </head>
 <body>
      <!-- seccion hola mundo -->
-     <section id="hello" >
+     <section id="home" >
             <div class="container-fluid">
                <div class="row">
                    <div class="col-md-8">
                         <p><span><</span> hello, world! <span>/></span> </p>
                        <p>Soy María Chernysheva, <span>desarrolladora web</span></p></div>
                    <div class="col-md-4">
-                           <button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver mis trabajos</button>
+                           <a href="#projects"><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver mis trabajos</button></a>
                    </div>
                </div> 
             </div>
@@ -32,16 +32,16 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="#">Home </a>
+                        <a class="nav-link" id="go-to-home" href="#home">Home </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sobre mi</a>
+                        <a class="nav-link" id="go-to-about" href="#about">Sobre mi</a>
                     </li>
                     <li class="nav-item">
-                            <a class="nav-link" href="#">Mis proyectos</a>
+                            <a class="nav-link" id="go-to-projects" href="#projects">Mis proyectos</a>
                         </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
+                        <a class="nav-link" id="go-to-contact" href="#contact">Contacto</a>
                     </li>
                     </ul>
                 </div>
@@ -51,8 +51,8 @@
 
    
     <!-- sobre mi , mis skills-->
-    <section id="about">
-            <div class="row">
+    <section id="about"  >
+            <div class="row content">
                 <p  class="col-4 offset-4 col-md-2 offset-md-5 title">Sobre mi</p>
             </div>
             <div class="row">
@@ -62,12 +62,39 @@
     </section>
     <!-- mis proectos -->
     <section id="projects">
-            <div class="row">
+            <div class="row content">
                     <p  class="title col-4 offset-4 col-md-2 offset-md-5">Mis projectos</p>
+            </div>
+            <div class="row">
+                <div class="projects col-12 col-md-4">
+                    <img class="img-fluid"  src="ms.png" alt="">
+                    <div class="overlay"><p>Text</p></div>
+                </div>
+                <div class="projects col-12 col-md-4"> 
+                    <img class="img-fluid" src="bq.png" alt="">
+                    <div class="overlay"><p>Text</p></div>
+                </div>
+                <div class="projects col-12 col-md-4">
+                    <img class="img-fluid"  src="ml.png" alt="">
+                    <div class="overlay"><p>Text</p></div>
+                </div>
+                <div class="projects col-12 col-md-4">
+                    <img class="img-fluid"  src="dl.png" alt="">
+                    <div class="overlay"><p>Text</p></div>
+                </div>
+                <div class="projects col-12 col-md-4">
+                     <img class="img-fluid"  src="kr.png" alt="">
+                     <div class="overlay"><p>Text</p></div>
+                </div>
+                <div class="projects col-12 col-md-4">
+                    <img class="img-fluid"  src="rf.png" alt="">
+                     <div class="overlay"><p>Text</p></div>
+                </div>
             </div>
     </section>
     <!-- contactar -->
     <section id="contact"></section>
+
     <!-- redes sociales y copyright -->
     <section id="footer">
         
