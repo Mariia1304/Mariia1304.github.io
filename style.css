@@ -23,7 +23,30 @@ html {
 #home a:hover{
 	text-decoration: none;
 }
-
+/* aqnimation */
+.contenedor{
+	margin: auto;
+}
+#home p{
+	position: relative;
+}
+#animate{
+	position: absolute;
+	right: 4.9vw;
+	width: 0;
+	height: 20px;
+	background: #2d2929;
+	border-left:2px solid white;
+	animation: maquina 9s infinite alternate steps(56);
+}
+@keyframes maquina {
+	from {
+		width: 93%;
+	}
+	to {
+		width: 0;
+	}
+}
 /* Navbar */
 
 #navbar{
@@ -46,7 +69,7 @@ html {
 }
 .nav-item{
 
-    margin-right: 13em;
+    margin-right:10.5vw;
 
 }
 
