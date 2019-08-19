@@ -6,18 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Portfolio Marusya</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href=" animate.css">
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
      <!-- seccion hola mundo -->
      <section id="home" >
-            <div class="container-fluid">
+            <div class="container">
                <div class="row">
                    <div class="col-md-7">
                  
                         <p><span><</span> hello, world! <span>/></span> 
-                        Soy María Chernysheva, <span>desarrolladora web. </span><span id="animate">&#160;</span> </p> 
+                        Soy María Chernysheva, <span>desarrolladora web.  </span><span id="animate">&#160;</span> </p> 
                       </div>
                     
                    <div class="col-md-4">
@@ -57,13 +58,13 @@
 
    
     <!-- sobre mi , mis skills-->
-    <section id="about"  >
+    <section id="about">
             <div class="row content">
                 <p  class="col-4 offset-4 col-md-2 offset-md-5 title">Sobre mi</p>
             </div>
             <div class="row">
                <div class="col-12 col-md-6 img"><img class="img-fluid" src="maria.jpg" alt=""></div>
-               <div class="col-12 col-md-6 img"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem ipsam a dolorem, esse blanditiis fugit tempora illo, accusamus sunt, reiciendis at. Laudantium id maiores consequuntur eveniet tenetur explicabo, illum expedita!</p></div>
+               <div class="col-12 col-md-6 img"><p>Hola! Soy Maria, desarrolladora Front end, me gusta leer, correr, viajar, aprender, conocer nueva gente, me interesa cinematografía, fashion y exploración espacial por la humanidad.  </p></div>
             </div>
     </section>
     <!-- mis proectos -->
@@ -72,34 +73,40 @@
                     <p  class="title col-4 offset-4 col-md-2 offset-md-5">Mis projectos</p>
             </div>
             <div class="row">
-                <div class="projects col-12 col-md-4">
+                <div id="0" class="projects col-12 col-md-4">
                     <img class="img-fluid"  src="ms.png" alt="">
-                    <div class="overlay"><p>Text</p></div>
+                    <div class="overlay1 wow slideInDown"></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
-                <div class="projects col-12 col-md-4"> 
+                <div id="1" class="projects col-12 col-md-4"> 
                     <img class="img-fluid" src="bq.png" alt="">
-                    <div class="overlay"><p>Text</p></div>
+                    <div class="overlay1 wow slideInDown"></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
-                <div class="projects col-12 col-md-4">
+                <div id="2" class="projects col-12 col-md-4">
                     <img class="img-fluid"  src="ml.png" alt="">
-                    <div class="overlay"><p>Text</p></div>
+                    <div class="overlay1 wow slideInDown"></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
-                <div class="projects col-12 col-md-4">
+                <div id="3" class="projects col-12 col-md-4">
                     <img class="img-fluid"  src="dl.png" alt="">
-                    <div class="overlay"><p>Text</p></div>
+                    <div class="overlay1 wow slideInDown"></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
-                <div class="projects col-12 col-md-4">
+                <div id="4" class="projects col-12 col-md-4">
                      <img class="img-fluid"  src="kr.png" alt="">
-                     <div class="overlay"><p>Text</p></div>
+                     <div class="overlay1 wow slideInDown"></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
-                <div class="projects col-12 col-md-4">
+                <div id="5" class="projects col-12 col-md-4">
                     <img class="img-fluid"  src="rf.png" alt="">
-                     <div class="overlay"><p>Text</p></div>
+                    <div class="overlay1 wow slideInDown" ></div>
+                    <div class="overlay2 wow slideInUp"><center><a><button class="button button--ujarak button--border-thick button--text-upper button--size-s button--inverted button--text-thick">Ver el proyecto</button></a></center></div>
                 </div>
             </div>
     </section>
     <!-- skills -->
-    <section id="skills">
+    <section id="skills"> 
 
     </section>
     <!-- contactar -->
@@ -195,7 +202,10 @@
     </section>
  
     
-
+    <script src="wow.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>

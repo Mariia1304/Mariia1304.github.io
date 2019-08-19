@@ -16,7 +16,7 @@ function myFunction() {
   }
 }
 
-document.getElementById('go-to-home').addEventListener('click', ()=>{
+  document.getElementById('go-to-home').addEventListener('click', ()=>{
    document.getElementById('navbarSupportedContent').classList.remove('show');
   })
   document.getElementById('go-to-about').addEventListener('click', ()=>{
@@ -29,5 +29,14 @@ document.getElementById('go-to-home').addEventListener('click', ()=>{
     document.getElementById('navbarSupportedContent').classList.remove('show');
    })
 
-
+  
    
+  //  let el = document.getElementsByClassName('projects');
+  //  console.log(el)
+  //  for (let i=0; i < el.length; i++) {
+  //   clickerFn = function() {
+  //     document.getElementById(i).getElementsByTagName('div')[0].className = "overlay1 wow slideInDown"
+      
+  //    }
+  //   el.item(i).onclick = clickerFn;
+  //   }

@@ -5,7 +5,13 @@
          url(./courier-prime-code.regular.ttf) format('truetype');
 }
 html {
+	background: #2d2929;
 	scroll-behavior: smooth;
+	width: 100%;
+}
+body{
+	margin: 0;
+	padding: 0;
 }
 /* Section hello */
 #home{
@@ -32,19 +38,34 @@ html {
 }
 #animate{
 	position: absolute;
-	right: 4.9vw;
+	right: 3vw;
 	width: 0;
 	height: 20px;
 	background: #2d2929;
 	border-left:2px solid white;
-	animation: maquina 9s infinite alternate steps(56);
+	animation: maquina 7s infinite alternate steps(56), blink .75s step-end infinite;
 }
 @keyframes maquina {
 	from {
-		width: 93%;
+		width:97%;
 	}
 	to {
-		width: 0;
+		width: 0%;
+	}
+}
+@keyframes blink {
+    from, to { 
+        border-color: transparent 
+    }
+    50% { 
+        border-color: white; 
+    }
+}
+@media (max-width: 575.98px){
+	
+	#animate{
+		
+		display: none;
 	}
 }
 /* Navbar */
@@ -186,7 +207,8 @@ html {
 }
 @media (max-width: 575.98px) { 
 	#about img{
-		width: 9em;
+		width: 12em;
+
 	}
 }
 .img{
@@ -197,8 +219,12 @@ html {
 	font-size: 1.2em;
 }
 @media (max-width: 575.98px) { 
+	#about .row:first-child{
+		padding-bottom: 2.5em;
+	}
 	#about .row:last-child p{
-		padding: 2em 2.5em 0 2.5em;
+		
+		padding:4em 2.5em 0 2.5em;
 		font-size: .8em;
 	}
 }
@@ -214,13 +240,28 @@ html {
 .projects{
 	padding: 0;
 }
-.overlay {
+.overlay1 {
     font-size: 1.5rem;
-    color: #a4c0d4;
+    /* color: #a4c0d4; */
     position: absolute;
-    text-align: center;
-    height: 100%;
-    background-color: rgba(255,	255,	255, .9);
+  
+    height: 50%;
+    background-color: rgba(45,	41, 41, .9);
+    opacity: 1;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transition: .2s;
+}
+.overlay2{
+	
+	font-size: 1.5rem;
+    /* color: #a4c0d4; */
+    position: absolute;
+  
+    height: 50%;
+	background-color: rgba(45,	41, 41, .9);
     opacity: 1;
     z-index: 5000;
     bottom: 0;
@@ -228,12 +269,21 @@ html {
     width: 100%;
     transition: .2s;
 }
+.overlay2 button{
+	margin-top: 7%;
+}
+@media (max-width: 575.98px){
+	.overlay2 button{
+		margin-top: 13%;
+	}
+}
+
 
 /* footer */
 #footer{
 	
 	background: #2d2929;
-	font-family: 'Courier New', Courier, monospace;
+	font-family: 'Quattrocento Sans', sans-serif;
 	color:#f3f3f5;
 	
 }
