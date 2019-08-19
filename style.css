@@ -5,9 +5,9 @@
          url(./courier-prime-code.regular.ttf) format('truetype');
 }
 html {
-	background: #2d2929;
+	
 	scroll-behavior: smooth;
-	width: 100%;
+	
 }
 body{
 	margin: 0;
