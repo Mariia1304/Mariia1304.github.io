@@ -28,15 +28,36 @@ function myFunction() {
    document.getElementById('go-to-contact').addEventListener('click', ()=>{
     document.getElementById('navbarSupportedContent').classList.remove('show');
    })
+  let el = document.getElementsByClassName('projects');
+  for (let i=0; i < el.length; i++){
+    document.getElementById(i).addEventListener("mouseenter", function() {
 
-  
-   
-  //  let el = document.getElementsByClassName('projects');
-  //  console.log(el)
-  //  for (let i=0; i < el.length; i++) {
-  //   clickerFn = function() {
-  //     document.getElementById(i).getElementsByTagName('div')[0].className = "overlay1 wow slideInDown"
-      
-  //    }
-  //   el.item(i).onclick = clickerFn;
-  //   }
+      setTimeout(function() {
+        document.getElementById(i).getElementsByTagName('div')[0].classList.remove='slideDown-leave'
+        document.getElementById(i).getElementsByTagName('div')[0].className = 'slideDown overlay1';
+        document.getElementById(i).getElementsByTagName('div')[0].style.display = 'block';
+        document.getElementById(i).getElementsByTagName('div')[1].className = 'slideUp overlay2';
+        document.getElementById(i+`center`).style.display = 'block';
+      }, 200);
+    },false);
+    document.getElementById(i).addEventListener("mouseleave", function() {
+
+      setTimeout(function() {
+        document.getElementById(i).getElementsByTagName('div')[0].classList.remove='slideDown'
+    document.getElementById(i).getElementsByTagName('div')[0].className = 'slideDown-leave overlay1';
+    document.getElementById(i).getElementsByTagName('div')[0].style.display = 'block';
+    document.getElementById(i).getElementsByTagName('div')[1].className = 'slideUp overlay2';
+    document.getElementById(i+`center`).style.display = 'block';
+      }, 200);
+    },false);
+    // document.getElementById(i).addEventListener("click", function() {
+
+    //   setTimeout(function() {
+    // document.getElementById(i).getElementsByTagName('div')[0].className = 'slideDown overlay1';
+    // document.getElementById(i).getElementsByTagName('div')[0].style.display = 'block';
+    // document.getElementById(i).getElementsByTagName('div')[1].className = 'slideUp overlay2';
+    // document.getElementById(i+`center`).style.display = 'block';
+    //   }, 200);
+    // },false);
+  }
+
