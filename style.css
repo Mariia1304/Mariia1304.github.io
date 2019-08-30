@@ -10,7 +10,7 @@ html {
 	
 }
 body{
-	margin: 0;
+	margin: 0; 
 	padding: 0;
 }
 /* Section hello */
@@ -150,17 +150,10 @@ body{
 .button--ujarak.button--inverted::before {
 	background: #a4c0d4;
 }
-.button--ujarak,
-.button--ujarak::before {
-	-webkit-transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-	transition-timing-function: cubic-bezier(0.2, 1, 0.3, 1);
-}
-.button--ujarak:hover {
-	color: #fff;
-	border-color: #37474f;
-}
+
+
 .button--ujarak.button--inverted:hover {
-	color: #37474F;
+	color: #fff;
 	border-color: #fff;
 }
 .button--ujarak:hover::before {
@@ -201,7 +194,9 @@ body{
 	}
 }
 #about img{
-	border-radius: 50%;
+	border-style: solid;
+	border-color:white;
+	border-width: 8px 8px 40px 8px;
 	width: 15em;
 	
 }
@@ -229,14 +224,27 @@ body{
 	}
 }
 /* projects */
+
+
 #projects{
 	/* height: 100vh; */
 	background: #f3f3f5;
+	padding-bottom:14vh;
 }
 #projects img{
 	width: 100%;
 	height: 250px;
 }
+#projects .button--ujarak{
+	background: transparent;
+	border-color: #2d2929;
+	color:#2d2929;
+}
+#projects .button--ujarak:hover{
+	border-color: white;
+	color:white;
+}
+
 .projects{
 	padding: 0;
 	border:solid 2px white;
@@ -247,18 +255,18 @@ body{
 .projects p{
 	text-transform: uppercase;
 	margin-top: 50px;
-	color: white;
+	color: #2d2929;
 	font-family: 'Quattrocento Sans', sans-serif;
 	text-align: center;
 	font-size: 1em;
 }
 .overlay1 {
     font-size: 1.5rem;
-    /* color: #a4c0d4; */
+
     position: absolute;
   
     height: 50%;
-    background-color: rgba(45,	41, 41, .9);
+    background-color:#f3f3f5;
     opacity: 1;
     z-index: 5000;
     top: 0;
@@ -269,11 +277,11 @@ body{
 .overlay2{
 	
 	font-size: 1.5rem;
-    /* color: #a4c0d4; */
+
     position: absolute;
   
     height: 50%;
-	background-color: rgba(45,	41, 41, .9);
+	background-color: #f3f3f5;
     opacity: 1;
     z-index: 5000;
     bottom: 0;
@@ -384,6 +392,19 @@ body{
 center{
 	display: none;
 }
+
+/* skills */
+#skills{
+	background: #a4c0d4;
+	padding-bottom:14vh;
+}
+#skills img{
+	width: 60px;
+}
+.skill{
+	text-align: center; 
+	padding:20px;
+}
 /* footer */
 #footer{
 	
@@ -399,3 +420,11 @@ center{
 	text-decoration: none;
 	
 }
+.mail li a:hover{
+	color: #a4c0d4 !important;
+}
+
+
+
+
+
