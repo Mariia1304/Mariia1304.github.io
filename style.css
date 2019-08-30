@@ -449,8 +449,11 @@ center{
 .list-unstyled li a:hover{
 	color: #a4c0d4 !important;
 }
-
-
+@media (max-width: 768px){
+	footer{
+		height: 100vh;
+	}
+}
 
 
 
