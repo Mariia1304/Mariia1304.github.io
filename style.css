@@ -4,6 +4,10 @@
     src: local('courier prime code'),
          url(./courier-prime-code.regular.ttf) format('truetype');
 }
+
+
+
+
 html {
 	
 	scroll-behavior: smooth;
@@ -14,9 +18,16 @@ body{
 	padding: 0;
 }
 /* Section hello */
+
 #home{
-    background: #2d2929;
+	height: 100vh;
+	background-image:url(./img/space3.gif);
+	background-repeat: no-repeat;
+	background-size: cover;
     padding: 2.5em;
+}
+#home .row{
+	margin-top: 30vh;
 }
 #home h4, #home p{
     font-family: 'courier prime code';
@@ -41,7 +52,7 @@ body{
 	right: 3vw;
 	width: 0;
 	height: 20px;
-	background: #2d2929;
+	background: black;
 	border-left:2px solid white;
 	animation: maquina 7s infinite alternate steps(56), blink .75s step-end infinite;
 }
@@ -395,6 +406,7 @@ center{
 
 /* skills */
 #skills{
+	
 	background: #a4c0d4;
 	padding-bottom:14vh;
 }
@@ -405,6 +417,19 @@ center{
 	text-align: center; 
 	padding:20px;
 }
+#contact .title{
+	padding-top:5vh;
+	margin-bottom:7vh;
+	font-size: 1.5em;
+	font-family: 'Quattrocento Sans', sans-serif;
+	text-transform: uppercase;
+	border-bottom:solid 2px white;
+	text-align: center;
+	padding-bottom: .2em;
+	margin-top:.4em;
+	
+}
+
 /* footer */
 #footer{
 	
@@ -420,7 +445,7 @@ center{
 	text-decoration: none;
 	
 }
-.mail li a:hover{
+.list-unstyled li a:hover{
 	color: #a4c0d4 !important;
 }
 
