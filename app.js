@@ -36,6 +36,12 @@ document.getElementById('navbarSupportedContent').classList.remove('show');
 document.getElementById('go-to-contact').addEventListener('click', ()=>{
 document.getElementById('navbarSupportedContent').classList.remove('show');
 })
+document.getElementById('go-to-skills').addEventListener('click', ()=>{
+  document.getElementById('navbarSupportedContent').classList.remove('show');
+  })
+  document.getElementById('go-to-contact').addEventListener('click', ()=>{
+    document.getElementById('navbarSupportedContent').classList.remove('show');
+    })
 let el = document.getElementsByClassName('projects');
 for (let i=0; i < el.length; i++){
 document.getElementById(i).addEventListener("mouseenter", function() {
@@ -44,7 +50,6 @@ document.getElementById(i).addEventListener("mouseenter", function() {
     document.getElementById(i).getElementsByTagName('div')[0].style.display = 'block';
     document.getElementById(i).getElementsByTagName('div')[1].style.display = 'block';
     document.getElementById(i).getElementsByTagName('div')[0].className = 'slideDown overlay1';
-    
     document.getElementById(i).getElementsByTagName('div')[1].className = 'slideUp overlay2';
     document.getElementById(i+`center`).style.display = 'block';
   }, 200);
