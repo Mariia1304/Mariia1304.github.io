@@ -188,7 +188,12 @@ body{
 	background: #a4c0d4;
 	padding-bottom: 2em ;
 }
-
+@media (max-width: 768px) { 
+	#about{
+		height: 110vh;
+	
+	}
+}
 .title{
 	font-size: 1.5em;
 	font-family: 'Quattrocento Sans', sans-serif;
@@ -213,9 +218,8 @@ body{
 }
 @media (max-width: 768px) { 
 	#about img{
-		margin-top:2em;
-		width: 12em;
-
+		width: 11em;
+		margin-bottom:5vh;
 	}
 }
 .img{
@@ -227,12 +231,13 @@ body{
 }
 @media (max-width: 768px) { 
 	#about .row:first-child{
-		padding-bottom: 2.5em;
+		margin-bottom: 0;
 	}
 	#about .row:last-child p{
+		text-align: center;
 		
-		padding:4em 2.5em 0 2.5em;
-		font-size: 1em;
+		margin-bottom:10vh;
+		font-size: .9em;
 	}
 }
 /* projects */
