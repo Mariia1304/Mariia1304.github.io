@@ -5,9 +5,7 @@
          url(./courier-prime-code.regular.ttf) format('truetype');
 }
 html {
-	
 	scroll-behavior: smooth;
-	
 }
 body{
 	margin: 0; 
@@ -17,10 +15,19 @@ body{
 
 #home{
 	height: 100vh;
-	background-image:url(./img/heaven.gif);
+	background-color: #2d2929;
 	background-repeat: no-repeat;
 	background-size: cover;
     padding: 2.5em;
+}
+@media (max-width: 768px) { 
+	#home{
+		height: 100vh;
+		background-image:url(./img/heaven.gif);
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 2.5em;
+	}
 }
 #home .row{
 	margin-top: 30vh;
@@ -41,6 +48,7 @@ body{
 	margin: auto;
 }
 #home p{
+	
 	position: relative;
 }
 #animate{
@@ -48,7 +56,7 @@ body{
 	right: 3vw;
 	width: 0;
 	height: 20px;
-	background: black;
+	background: #2d2929;
 	border-left:2px solid white;
 	animation: maquina 7s infinite alternate steps(56), blink .75s step-end infinite;
 }
